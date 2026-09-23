@@ -1,0 +1,211 @@
+/*
+    Martha Guzman
+    September 23, 2026
+    Assignment 6 - bioSite Development
+*/
+
+/* ---------- Basic Page Styles ---------- */
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+    background-color: #F7F2E8;
+    color: #30343B;
+    line-height: 1.6;
+}
+
+/* ---------- Header and Navigation ---------- */
+
+header {
+    background-color: #27445D;
+    color: white;
+    padding: 25px 10%;
+}
+
+header h1 {
+    margin: 0;
+    font-size: 2.5em;
+    letter-spacing: 1px;
+}
+
+nav {
+    margin-top: 10px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+    margin-right: 25px;
+    font-weight: bold;
+}
+
+nav a:hover {
+    color: #C79A4B;
+}
+
+/* ---------- Main Content ---------- */
+
+main {
+    width: 80%;
+    max-width: 1100px;
+    margin: 40px auto;
+}
+
+section {
+    margin-bottom: 50px;
+}
+
+h2 {
+    color: #27445D;
+    font-size: 2em;
+    margin-bottom: 15px;
+}
+
+h3 {
+    color: #78917C;
+    font-size: 1.4em;
+}
+
+p {
+    font-size: 1em;
+    max-width: 75ch;
+}
+
+/* ---------- Hero Section ---------- */
+
+#hero {
+    background-color: white;
+    padding: 50px;
+    border-left: 6px solid #C79A4B;
+}
+
+#hero h2 {
+    font-size: 2.4em;
+    margin-top: 0;
+}
+
+/* ---------- Journey Cards ---------- */
+
+#journey {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+}
+
+#journey h2 {
+    width: 100%;
+}
+
+.card {
+    background-color: white;
+    padding: 25px;
+    flex: 1;
+    min-width: 220px;
+    border-top: 4px solid #78917C;
+.card-image {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+    border-radius: 8px;
+    margin-bottom: 15px;
+}
+}
+
+/* ---------- About Page ---------- */
+
+.about-content {
+    display: flex;
+    gap: 40px;
+    align-items: flex-start;
+}
+
+.about-image {
+    background-color: #E8E2D8;
+    padding: 40px 20px;
+    min-width: 250px;
+    text-align: center;
+
+.about-image img {
+    width: 100%;
+    max-width: 300px;
+    height: auto;
+    border-radius: 8px;
+}
+
+.caption {
+    font-size: 0.9em;
+    font-style: italic;
+    margin-top: 10px;
+}
+}
+
+.about-text {
+    flex: 1;
+}
+
+/* ---------- Hobbies Page ---------- */
+
+.intro {
+    font-size: 1.1em;
+    margin-bottom: 30px;
+}
+
+.hobby-card {
+    background-color: white;
+    padding: 25px;
+    margin-bottom: 25px;
+    border-left: 5px solid #78917C;
+}
+
+.hobby-image {
+    background-color: #E8E2D8;
+    padding: 35px 20px;
+    margin: 15px 0;
+    text-align: center;
+.hobby-image img {
+    width: 100%;
+    max-width: 500px;
+    height: 300px;
+    object-fit: cover;
+    border-radius: 8px;
+.hobby-image .travel-image {
+    max-width: 400px;
+}
+}
+
+/* ---------- Footer ---------- */
+
+footer {
+    background-color: #27445D;
+    color: white;
+    text-align: center;
+    padding: 20px;
+    margin-top: 50px;
+}
+
+footer p {
+    margin: 0 auto;
+}
+
+/* ---------- Responsive Layout ---------- */
+
+@media screen and (max-width: 700px) {
+
+    main {
+        width: 90%;
+    }
+
+    .about-content {
+        flex-direction: column;
+    }
+
+    .about-image {
+        width: 100%;
+        box-sizing: border-box;
+    }
+
+    nav a {
+        display: inline-block;
+        margin-bottom: 8px;
+    }
+}
